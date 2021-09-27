@@ -1,0 +1,46 @@
+header {
+    background-color: red;
+    height: 150px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-header {
+    background-color: lightblue;
+    color: white;
+    font-size: 35px;
+}
+
+.card-body {
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+table, td {
+    border: 1px solid black;
+    background-color: white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
