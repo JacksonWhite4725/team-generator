@@ -19,6 +19,6 @@ describe('Engineer', () => {
         const role = 'Engineer',
         const newEngineer = new Engineer('Jackson', 1, 'jackson@gmail.com', 'jacksonwhite4725');
 
-        expect(newEmployee.getRole()).tobe(role);
+        expect(newEngineer.getRole()).tobe(role);
     });
 });
