@@ -1,0 +1,29 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.1.2",
+    "jest": "^27.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonWhite4725/team-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacksonWhite4725/team-generator/issues"
+  },
+  "homepage": "https://github.com/JacksonWhite4725/team-generator#readme"
+}
