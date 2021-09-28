@@ -118,4 +118,96 @@ function addIntern() {
     });
 };
 
+function endTask() {
+    let teamCards = '';
+
+    team.forEach((member) => {
+        switch (member.getRole()) {
+            case 'Manager':
+                teamCards += `
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                        <h1>${member.name}</h1>
+                        </div>
+                        <div class="card_bottom">
+                        <div class="card_category">
+                            ${member.getRole()}
+                        </div>
+                        <div class="card_info">
+                            <p class="title">ID: ${member.id}</p>
+                            <p>Email: ${member.email}</p>
+                            <p>Office Number: ${member.officeNumber}</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                `
+                break;
+            case 'Engineer':
+                teamCards += `
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                        <h1>${member.name}</h1>
+                        </div>
+                        <div class="card_bottom">
+                        <div class="card_category">
+                            ${member.getRole()}
+                        </div>
+                        <div class="card_info">
+                            <p class="title">ID: ${member.id}</p>
+                            <p>Email: ${member.email}</p>
+                            <p>GitHub: ${member.github}</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                `
+                break;
+            case 'Intern':
+                teamCards += `
+                <div class="card_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                        <h1>${member.name}</h1>
+                        </div>
+                        <div class="card_bottom">
+                        <div class="card_category">
+                            ${member.getRole()}
+                        </div>
+                        <div class="card_info">
+                            <p class="title">ID: ${member.id}</p>
+                            <p>Email: ${member.email}</p>
+                            <p>School: ${member.school}</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                `
+                break;
+        };
+    });
+
+    const display = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+	    <meta charset="UTF-8">
+	    <title>Team Interface</title>
+	    <link rel="stylesheet" href="./dist/css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="cards_wrap">
+                ${teamCards}
+            <div class="cards_wrap">
+        <div class="wrapper">
+    </body>
+    </html>
+    `
+
+    fs.appendFileSync(path.join(__dirname, "/index.html"), display, "utf8");
+};
+
 startTeam();
