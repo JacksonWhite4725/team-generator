@@ -136,7 +136,7 @@ function endTask() {
                         </div>
                         <div class="card_info">
                             <p class="title">ID: ${member.id}</p>
-                            <p>Email: ${member.email}</p>
+                            <p>Email: <a href="mailto:${member.email}">${member.email}</a></p>
                             <p>Office Number: ${member.officeNumber}</p>
                         </div>
                         </div>
@@ -157,8 +157,8 @@ function endTask() {
                         </div>
                         <div class="card_info">
                             <p class="title">ID: ${member.id}</p>
-                            <p>Email: ${member.email}</p>
-                            <p>GitHub: ${member.github}</p>
+                            <p>Email: <a href="mailto:${member.email}">${member.email}</a></p>
+                            <p>GitHub: <a href="https://github.com/${member.github}" target="_blank">${member.github}</a></p>
                         </div>
                         </div>
                     </div>
@@ -178,7 +178,7 @@ function endTask() {
                         </div>
                         <div class="card_info">
                             <p class="title">ID: ${member.id}</p>
-                            <p>Email: ${member.email}</p>
+                            <p>Email: <a href="mailto:${member.email}">${member.email}</a></p>
                             <p>School: ${member.school}</p>
                         </div>
                         </div>
